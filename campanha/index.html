@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar Campanha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pesquisar Campanha</h2>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="nomeCampanha">Nome Campanha:</label>
+                <input type="text" id="nomeCampanha" name="nomeCampanha">
+            </div>
+            <div class="form-group">
+                <label for="dataInicio">Data Início Campanha:</label>
+                <input type="date" id="dataInicio" name="dataInicio">
+            </div>
+            <div class="form-group">
+                <label for="dataFim">Data Fim Campanha:</label>
+                <input type="date" id="dataFim" name="dataFim">
+            </div>
+            <div class="form-group">
+                <label for="statusCampanha">Status Campanha:</label>
+                <select id="statusCampanha" name="statusCampanha">
+                    <option value="todos">Todos</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                    <option value="encerrado">Encerrado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Pesquisar</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
